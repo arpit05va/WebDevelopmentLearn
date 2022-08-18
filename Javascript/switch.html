@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Switch</title>
+</head>
+<body>
+    <h3>Enter Your Choice</h3>
+    <ul>
+        <li>Add</li>
+        <li>Sub</li>
+        <li>Mult</li>
+        <li>div</li>
+    </ul>
+    <br>
+    <form >
+        <input type="text" name="enterchoice" placeholder="Enter your choice" id="choices">
+        <br><br>
+
+        <input type="text" name="number1" 
+        placeholder="Enter first Number" id="input1">
+        <br><br>
+
+        <input type="text" name="number2"
+        placeholder="Enter Second Number" id="input2">
+        <br><br>
+
+        <button onclick="myfun()">Click Me</button>
+
+    </form>
+    <script>
+        function myfun(){
+            var choice=document.getElementById("choices").value;
+
+            switch(choice)
+            {
+                case "Add" : var num1=parseInt(document.getElementById("input1").value,10);
+                                   var num2=parseInt(document.getElementById("input2").value,10);
+                                   var add=num1+num2;
+                                   document.write(add);
+                                   break;
+                case "Sub" : var num1=parseInt(document.getElementById("input1").value,10);
+                                   var num2=parseInt(document.getElementById("input2").value,10);
+                                   document.write(num1-num2);
+                                   break;
+                case "Mult" : var num1=parseInt(document.getElementById("input1").value,10);
+                                   var num2=parseInt(document.getElementById("input2").value,10);
+                                   document.write(num1*num2);
+                                   break;
+                case "div" : var num1=parseInt(document.getElementById("input1").value,10);
+                                   var num2=parseInt(document.getElementById("input2").value,10);
+                                   document.write(num1/num2);
+                                   break;
+                default:alert("wrong input");
+            }
+
+        }
+    </script>
+</body>
+</html>

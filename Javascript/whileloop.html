@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>WhileLoop</title>
+</head>
+
+<body>
+    <form >
+        <input type="text" name="number" placeholder="Enter the Number" id="input1">
+        <br><br>
+        <button onclick="myfuction()">Generate Table</button>
+    </form>
+
+    <script>
+       function myfuction()
+       {
+         var i=parseInt(document.getElementById("input1").value,10);
+        var j=1;
+        while(j<=10)
+        {
+            document.write(i*j);
+            j++;
+            document.write("<br>")
+        }
+       }
+    </script>
+</body>
+</html>
