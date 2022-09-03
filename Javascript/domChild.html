@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DomChild</title>
+</head>
+<body>
+    <p id="naam">Arpit</p>
+    <p class="welcome">vashistha</p>
+    <p class="welcome">RJ27</p>
+    <ul>
+        <li>Hello</li>
+        <li>Hi</li>
+        <li>Bye</li>
+    </ul>
+    <script>
+        var child=document.body.children;
+        console.log(child);
+        // add a new child in a body
+        var para=document.createElement("p");
+        var textNode=document.createTextNode("this is a new para");
+        para.appendChild(textNode);
+         document.body.appendChild(para);
+
+         // access first child 
+         var list = document.querySelector("ul");
+         console.log(list);
+         console.log(list.firstChild);
+
+         // access last child
+         console.log(list.lastChild);
+
+         // access siblings
+         var firstsibling= naam.nextElementSibling;
+         console.log(firstsibling);
+
+         // how to find parentnode
+         console.log(list.parentNode);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOMCSS</title>
+</head>
+<body>
+    <br>
+    <p id="hello" >hello my name is arpit vashistha</p>
+    <br>
+    <p id="hell" style>hello my name is arpit vashistha from udaipur </p>
+    <script>
+        //change only one css property
+        document.getElementById('hello').style.color="blue";
+
+        // change all the css property
+        document.getElementById('hell').setAttribute(
+           "style",
+          "color:red; text-align:center; height:100px; "
+        );
+        
+    </script>
+</body>
+</html>

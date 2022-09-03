@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Print Page </title>
+</head>
+
+<body>
+
+    <div id="div1">
+        print this first line
+        <button onclick="myfun('div1')">print1</button>
+    </div>
+    <br>
+    <div id="div2">
+        print this second line
+        <button onclick="myfun('div2')">print2</button>
+    </div>
+<br>
+    <div id="div3">
+        print this third line
+        <button onclick="myfun('div3')">print3</button>
+    </div>
+    <br>
+<button onclick="mywholepage()">Whole Page</button>
+
+    <script>
+        function mywholepage()
+        {
+            window.print();
+        }
+        //print specific section
+        function myfun(paravalue)
+        {
+            var backup=document.body.innerHTML;
+            var divcontent=document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML=divcontent;
+            window.print();
+            document.body.innerHTML=backup;
+
+        }
+    </script>
+</body>
+</html>

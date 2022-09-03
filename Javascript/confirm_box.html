@@ -6,7 +6,19 @@
 </head>
 <body>
     <script>
-        
+      function myfun(){
+          var userconfirmation=confirm("Do you want to visit website");
+        if(userconfirmation === true)
+        {
+            window.open("https://www.linkedin.com/feed/");
+            return true;
+        }
+        else{
+            document.write("You Click on the cancel Button");
+            return false;
+        }
+      }
     </script>
+    <button onclick="myfun()">Click Me</button>
 </body>
 </html>

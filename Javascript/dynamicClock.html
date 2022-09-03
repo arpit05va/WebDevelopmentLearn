@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Dynamic Clock</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Dynamic Clock</h1>
+ 
+    <p id="showclocktime" style="text-align: center;"></p>
+
+    <button onclick="clearInterval(clock)">Stop Time</button>
+    
+    <script>
+        var clock=setInterval(clocktiming,1000);
+        function clocktiming(){
+        var d= new Date();
+        var time=d.toLocaleTimeString();
+        document.getElementById("showclocktime").innerHTML=time;
+        }
+    </script>
+</body>
+</html>

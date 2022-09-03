@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Dates</title>
+
+</head>
+<body>
+    <h1>Today date</h1>
+    <script>
+        // to get the date
+        var d= new Date();
+        var year= d.getUTCFullYear();
+        var month=d.getUTCMonth()+1;
+        var day =d.getUTCDate();
+      
+        document.write(d);
+       document.write("<br/>")
+        document.write(year+"/"+month+"/"+day);
+
+        // to set your own date
+        var d=new Date();
+        document.write("<br/>")
+        d.setMonth(11);
+        d.setFullYear(2023,11,3);
+        d.setDate(20);
+        document.write(d);
+    </script>
+</body>
+</html>

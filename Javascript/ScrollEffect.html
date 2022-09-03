@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>Scroll Effect</title>
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <div class="row text-white">
+            <div class="col-lg-4 col-md4 col-sm-4 " id="card-one">
+                <div class="card" style="background-color: #f98866;">
+                <img class="card-img-top" src="use case diagram.jpg" alt="">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Arpit Vashsitha</h4>
+                    <p class="card-text">hello Everyone</p>
+                    <a href="https://www.youtube.com/watch?v=psi-V0ijedg&list=PLwGdqUZWnOp1hqyT6h7pY0RlXIIGlE5U0&index=32" class="btn btn-primary">See profile</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md4 col-sm-4 " id="card-two">
+                <div class="card" style="background-color: #f98866;">
+                <img class="card-img-top" src="use case diagram.jpg" alt="">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Arpit Vashsitha</h4>
+                    <p class="card-text">hello Everyone</p>
+                    <a href="https://www.youtube.com/watch?v=psi-V0ijedg&list=PLwGdqUZWnOp1hqyT6h7pY0RlXIIGlE5U0&index=32" class="btn btn-primary">See profile</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md4 col-sm-4 " id="card-three">
+                <div class="card" style="background-color: #f98866;">
+                <img class="card-img-top" src="use case diagram.jpg" alt="">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Arpit Vashsitha</h4>
+                    <p class="card-text">hello Everyone</p>
+                    <a href="https://www.youtube.com/watch?v=psi-V0ijedg&list=PLwGdqUZWnOp1hqyT6h7pY0RlXIIGlE5U0&index=32" class="btn btn-primary">See profile</a>
+                </div>
+                </div>
+            </div>
+  </div><br><br>
+</div>
+        
+
+       <div class="text-white container-fluid text-center" style="width: 100%; height: 400px; background-color: #80bd9e;">
+        <h1 style="line-height: 400px;" id="textanimate">Welcome to my Website :)</h1>
+    </div>
+
+    <div class="container">
+        <br><br>
+        <div class="row text-white">
+            <div class="col-lg-4 col-md4 col-sm-4" id="cardtwo-one">
+                <div class="card" style="background-color: #f98866;">
+                <img class="card-img-top" src="use case diagram.jpg" alt="">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Arpit Vashsitha</h4>
+                    <p class="card-text">hello Everyone</p>
+                    <a href="#" class="btn btn-primary">See profile</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md4 col-sm-4" id="cardtwo-two">
+                <div class="card" style="background-color: #f98866;">
+                <img class="card-img-top" src="use case diagram.jpg" alt="">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Arpit Vashsitha</h4>
+                    <p class="card-text">hello Everyone</p>
+                    <a href="#" class="btn btn-primary">See profile</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md4 col-sm-4" id="cardtwo-three">
+                <div class="card" style="background-color: #f98866;">
+                <img class="card-img-top" src="use case diagram.jpg" alt="">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Arpit Vashsitha</h4>
+                    <p class="card-text">hello Everyone</p>
+                    <a href="#" class="btn btn-primary">See profile</a>
+                </div>
+                </div>
+            </div>
+  </div><br><br>
+</div>
+        
+  <div class="text-white container-fluid text-center" style="width: 100%; height: 400px; background-color: #80bd9e;">
+        <h1 style="line-height: 400px;" id="textanimate">Welcome to my Website :)</h1>
+    </div>
+  
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var positiontop=$(document).scrollTop();
+                console.log(positiontop);
+                if((positiontop>10 &&(positiontop<213))){
+                    $('#card-one').addClass('animated bounceInLeft');
+                    $('#card-two').addClass('animated bounceInLeft');
+                    $('#card-three').addClass('animated bounceInLeft');
+                }
+                if((positiontop>240 &&(positiontop<515))){
+                    $('#textanimate').addClass('animated bounceInLeft');
+                  
+                }
+                if((positiontop>500 &&(positiontop<735))){
+                    $('#cardtwo-one').addClass('animated bounceInLeft');
+                    $('#cardtwo-two').addClass('animated bounceInLeft');
+                    $('#cardtwo-three').addClass('animated bounceInLeft');
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
